@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector("table"),r=e.querySelectorAll("th"),n=e.querySelector("tbody");r.forEach(function(e,r){e.addEventListener("click",function(){var t=Array.from(n.querySelectorAll("tr")),o="Age"===e.innerText||"Salary"===e.innerText;t.sort(function(e,n){var t=e.children[r].innerText,a=n.children[r].innerText;return o?parseFloat(t.replace(/[^0-9.-]+/g,""))-parseFloat(a.replace(/[^0-9.-]+/g,"")):t.localeCompare(a)}),t.forEach(function(e){return n.appendChild(e)})})})});
+//# sourceMappingURL=index.2beb6505.js.map
